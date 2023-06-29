@@ -45,11 +45,13 @@ li a{
     margin-right: auto;
 }
 
+
 form {
     display: block;
     margin: auto;
     background-color:rgba(54, 54, 54, 0.8);
     border-radius: 15px;
+    align: right;
     
 }
 
@@ -62,10 +64,22 @@ button {
 }
 
 
-p {
+.text {
     color: white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     font-size: 20px;
+}
+
+p {
+  color:black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:10px;
+}
+
+h2 {
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
 }
 
 span{

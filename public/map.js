@@ -18,10 +18,10 @@ function loadMarkers() {
 
     const contentString =
     `<div id="content">
-    <h1 id="firstHeading" class="firstHeading">${info.location}</h1>
+    <h2 id="firstHeading" class="firstHeading">${info.location}</h2>
     <div id="bodyContent">
       <p>${info.features}</p>
-      <p>${info.notes}</p>
+      <p>Other: ${info.notes}</p>
       <p>Added by: ${info.user}</p>
       <p>Date: ${info.date}</p>
     </div>
