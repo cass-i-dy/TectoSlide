@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>TectoSlide</title>
+        <p class="anyweather" id="w"></p>
+        <script src="web_socket.js"></script>
+        <link rel="stylesheet" href="map.css">
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY-vfAkO7BPXdUs_xRt_DSfhqnonBSLuI"></script> -->
+    </head>
+
+    <body>
+        <header>
+        <nav>
+            <menu>
+                <li><a href="index.html">TectoSlide </a></li>
+                <li><a href="map.html">Map </a></li>
+                <li><a href="alldata.html">Data </a></li>
+                <li><a href="about.html">About Info</a></li>
+            </menu>
+        </nav>
+        <hr />
+    </header>
+
+    <main>
+        <p>User:</p>
+        <span id="user_name"></span>
+        <h1 id="test"></h1>
+        <div id="map" style="width: 100%; height: 400px;"></div>
+        <script> window.onload = function () {
+            initialize_map();
+        };
+        </script>
+        <form method="get" action="marker.html">
+            <button type="submit" id="map_location">Create Marker</button>
+        </form>
+    </main>
+    <footer>
+        <hr />
+    
+        <button class = "chat_button" id="open-chat" onclick= "window.location.href = 'chat.html';">Chat</button>
+        <a href="https://github.com/cass-i-dy/startup/tree/main">Github</a>
+    </footer>
+    <script src="map.js"></script>
+    <script 
+    src="https://maps.googleapis.com/maps/api/js?key=your_key"></script>
+    </body>
+</html>

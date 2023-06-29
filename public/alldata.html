@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TectoSlide</title>
+        <p class="anyweather" id="w"></p>
+        <script src="web_socket.js"></script>
+        <link rel="stylesheet" href="alldata.css">
+    </head>
+
+    <body>
+        <header>
+        <nav>
+            <menu>
+                <li><a href="index.html">TectoSlide</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="alldata.html">Data</a></li>
+                <li><a href="about.html">About Info</a></li>
+            </menu>
+        </nav>
+        <hr />
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Latitude:</th>
+                    <th>Longitude</th>
+                    <th>Location Name:</th>
+                    <th>Features:</th>
+                    <th>Notes:</th>
+                    <th>User:</th>
+                    <th>Date:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tbody id="infos"></tbody>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <hr />
+        <a href="https://github.com/cass-i-dy/startup/tree/main">Github</a>
+    </footer>
+    <script src="alldata.js"></script>
+    </body>
+
+</html>

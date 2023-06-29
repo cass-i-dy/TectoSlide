@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>TectoSlide</title>
+        <p class="anyweather" id="w"></p>
+        <link rel="stylesheet" href="chat.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <menu>
+                    <li><a href="index.html">TectoSlide </a></li>
+                    <li><a href="map.html">Map </a></li>
+                    <li><a href="alldata.html">Data </a></li>
+                    <li><a href="about.html">About Info</a></li>
+                </menu>
+            </nav>
+            <hr />
+        </header>
+        <main>
+            <h>Welcome to the Chat Area</h>
+            <div class="name">
+                <fieldset id="name-controls">
+                  <legend>My Name</legend>
+                  <input id="my-name" type="text" />
+                </fieldset>
+              </div>
+
+              <fieldset id="chat-controls" disabled>
+                <legend>Chat</legend>
+                <input id="new-msg" type="text" />
+                <button onclick="sendMessage()">Send</button>
+              </fieldset>
+              <div id="chat-text"></div>
+
+            <!-- <input type="text" id="messageInput" placeholder="Enter message"> -->
+            <!-- <button onclick="sendMessage()">Send</button> -->
+            <!-- <div id="chat-text"></div> -->
+            <button class="closing" onclick = "window.location.href = 'map.html';">Close</button>
+        </main>
+        <footer>
+            <hr />        
+            <a href="https://github.com/cass-i-dy/startup/tree/main">Github</a>
+        </footer>
+        </body>
+        <script src="chat.js"></script>
+    </html>    

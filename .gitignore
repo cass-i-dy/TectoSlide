@@ -1,0 +1,7 @@
+dbConfig.json
+.env
+.DS_Store
+node_modules/
+.vscode/
+dbkeys.sh
+cookie.txt

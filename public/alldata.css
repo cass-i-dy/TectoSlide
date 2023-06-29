@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+    background-color: rgba(3, 3, 3, 0.84);
+}
+
+
+  
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+menu {
+    flex: 1;
+    display: flex;
+    /*  overwrite Bootstrap so the menu does not wrap */
+    flex-direction: row !important;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(13, 13, 13, 0.74);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: White;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+  main {
+    flex: 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(54, 54, 54, 0.8);
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    margin: 20px;
+    
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead{
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+
+tr {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+
+tbody tr:nth-child(even)
+{
+    background-color: rgba(0, 20, 3, 0.6);
+}
+
+tbody tr:nth-child(odd)
+{
+    background-color: rgba(0, 51, 8, 0.8);
+}
+
+footer {
+    flex: 0 30px;
+    background-color: rgba(13, 13, 13, 0.74);
+    padding: 10px;
+}
+   
+  footer a {
+    float: right;
+    color: white;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  @media (max-height: 600px) {
+    header {
+      display: none;
+    }
+    footer {
+      flex: 1 100vh;
+    }
+    main {
+      flex: 1 100vh;
+    }
+  }
+
+  .anyweather {
+    color: white;
+    text-align: left;
+    font-size: 15px;
+  }
+  
